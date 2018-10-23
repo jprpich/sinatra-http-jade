@@ -1,1 +1,8 @@
 <p>Hola bienvenidos a Hello World Jade.</p>
+<% if @full_names %>
+  <% @full_names.each do |full_name| %>
+    <p><%= full_name["first_name"] %> - <%= full_name["last_name"] %></p>
+  <% end %>
+<% end %>
+
+<a href="/first">Crear Nombre!</a>
