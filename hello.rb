@@ -1,6 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  "Hello World!"
+  erb :index
+end
+
+get '/first' do
+  erb :first
 end
 
